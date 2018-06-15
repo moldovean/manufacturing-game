@@ -12,5 +12,8 @@
 
     <artifactId>car-manufacturing</artifactId>
 
+    <properties>
+        <failOnMissingWebXml>false</failOnMissingWebXml>
+    </properties>
 
 </project>

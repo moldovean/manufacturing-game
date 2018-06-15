@@ -1,5 +1,5 @@
 package club.cheapok.model.enums;
 
-public enum EngineType {
+public enum FuelType {
     PETROL, DIESEL, HYBRID, ELECTRIC;
 }
