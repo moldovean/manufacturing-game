@@ -6,6 +6,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>oreilly</module>
+        <module>test-me</module>
+        <module>edx-html</module>
     </modules>
 
     <groupId>club.cheapok</groupId>

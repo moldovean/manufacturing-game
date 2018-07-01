@@ -1,11 +1,13 @@
 package club.cheapok.model;
 
+import club.cheapok.model.engine.EngineModel;
 import club.cheapok.model.enums.CarModel;
 import club.cheapok.model.enums.Color;
 import club.cheapok.model.enums.EngineSpec;
 
 import javax.inject.Inject;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.util.UUID;
 
 @XmlRootElement
 public class CarSpecification {
@@ -15,6 +17,7 @@ public class CarSpecification {
     private EngineModel engineModel;
     @Inject
     private Color color;
+    private String identifier = UUID.randomUUID().toString();
 
     public CarSpecification() {
     }
@@ -64,4 +67,7 @@ public class CarSpecification {
         this.color = color;
     }
 
+    public void setIdentifier(final String identifier) {
+        this.identifier = identifier;
+    }
 }
